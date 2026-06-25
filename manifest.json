@@ -1,7 +1,7 @@
 {
-  "name": "İngilizce Pratik Uygulaması",
+  "name": "Sentence Practices",
   "short_name": "İngilizce",
-  "start_url": "/English-Practices/",
+  "start_url": "/Sentence-Practices/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
