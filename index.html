@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>İngilizce Pratik Uygulaması</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2563eb">
   <style>
     :root{
       --bg:#f3f6fb; --card:#fff; --text:#172033; --muted:#657084; --blue:#2563eb; --blue2:#1d4ed8;
@@ -5064,6 +5066,11 @@ function nextQuestion(){if(randomMode){current=getRandomIndex();}else{const {lis
 function prevQuestion(){if(randomMode){current=getRandomIndex();}else{const {list,pos}=getPositionInFiltered();current=list[(pos-1+list.length)%list.length];}render();}
 function resetProgress(){if(confirm('İlerleme ve skor sıfırlansın mı?')){current=0;score=0;wrong=0;checkedSet=new Set();wrongSet=new Set();favoriteSet=new Set();reviewWrongOnly=false;reviewFavoritesOnly=false;localStorage.removeItem('engPracticeCurrent');localStorage.removeItem('engPracticeScore');localStorage.removeItem('engPracticeWrong');localStorage.removeItem('engPracticeChecked');localStorage.removeItem('engPracticeWrongSet');localStorage.removeItem('engPracticeFavoriteSet');localStorage.removeItem('engPracticeReviewWrongOnly');localStorage.removeItem('engPracticeReviewFavoritesOnly');randomPool=[];localStorage.removeItem('engPracticeRandomPool');render();}}
 render();
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
 </script>
 </body>
 </html>
