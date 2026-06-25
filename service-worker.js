@@ -1,4 +1,4 @@
-const CACHE_NAME = "english-practice-v1";
+const CACHE_NAME = "sentence-practice-v1";
 
 const urlsToCache = [
   "/Sentence-Practices/",
