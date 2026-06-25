@@ -1,9 +1,9 @@
 const CACHE_NAME = "english-practice-v1";
 
 const urlsToCache = [
-  "/English-Practices/",
-  "/English-Practices/index.html",
-  "/English-Practices/manifest.json"
+  "/Sentence-Practices/",
+  "/Sentence-Practices/index.html",
+  "/Sentence-Practices/manifest.json"
 ];
 
 self.addEventListener("install", event => {
